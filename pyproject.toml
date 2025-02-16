@@ -1,0 +1,15 @@
+[project]
+name = "hana-chat"
+version = "0.1.0"
+description = "hana-chat"
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
+]
+
+plugin_dirs = ["src/plugins"]
+builtin_plugins = ["echo"]
+plugins = ["nonebot_plugin_status", "nonebot_plugin_anime_trace", "nonebot_plugin_waiter", "YetAnotherPicSearch"]
